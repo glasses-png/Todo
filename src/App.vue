@@ -1,5 +1,5 @@
 <template>
-  <todo-list list-name="My to-dos" />
+  <todo-list list-name="To-Do List" />
 </template>
 
 <script>
@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

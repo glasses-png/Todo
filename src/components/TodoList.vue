@@ -15,7 +15,6 @@
             v-for="(todo, index) in todos"
             :key="index"
             :description="todo.description"
-            :completed="todo.completed"
             @on-toggle="toggleTodo(todo)"
             @on-delete="deleteTodo(todo)"
             @on-edit="editTodo(todo, $event)"
@@ -37,18 +36,15 @@ export default {
   data() {
     return {
       todos: [
-        { description: "Do the dishes", completed: false },
-        { description: "Take out the trash", completed: false },
-        { description: "Finish doing laundry", completed: false },
+        { description: "Buy Groceries",},
+        { description: "Take out the trash", },
+        { description: "Finish doing laundry", },
       ],
     };
   },
   methods: {
     addTodo(newTodo) {
       this.todos.push({ description: newTodo, completed: false });
-    },
-    toggleTodo(todo) {
-      todo.completed = !todo.completed;
     },
     deleteTodo(deletedTodo) {
       this.todos = this.todos.filter(todo => todo !== deletedTodo);
@@ -61,4 +57,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss"></style>
+<style ></style>
