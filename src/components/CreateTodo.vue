@@ -1,11 +1,15 @@
 <template>
-  <form class="col-12 col-sm-10 col-md-8 cl-lg-6" @submit.prevent="addTodo()">
+  <form class="col-md-6" @submit.prevent="addTodo()">
+    <div class="input-group mb-3">
     <input
       v-model="newTodo"
       type="text"
       class="form-control"
-      placeholder="Create a new to-do..."
-    />
+      placeholder="What you want to do" />
+      <div class="input-group-append">
+    <button class="btn btn-primary" type="submit">Add</button>
+      </div>
+    </div>
   </form>
 </template>
 
@@ -27,4 +31,6 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <todo-list list-name="To-Do List" />
+  <todo-list list-name="TO-DO LIST" />
 </template>
 
 <script>
@@ -21,5 +21,9 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+body{
+  background-color: #05B8CC;
+  color: white;
 }
 </style>

@@ -5,7 +5,7 @@
         <h1>{{ listName }}</h1>
       </div>
     </div>
-    <div class="row mb-3">
+    <div class="row ">
       <create-todo @on-new-todo="addTodo($event)" />
     </div>
     <div class="row">
@@ -17,7 +17,7 @@
             :description="todo.description"
             @on-toggle="toggleTodo(todo)"
             @on-delete="deleteTodo(todo)"
-            @on-edit="editTodo(todo, $event)"
+            @on-edit="editTodo(todo, $event)" 
           />
         </ul>
       </div>
@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     addTodo(newTodo) {
-      this.todos.push({ description: newTodo, completed: false });
+      this.todos.push({ description: newTodo });
     },
     deleteTodo(deletedTodo) {
       this.todos = this.todos.filter(todo => todo !== deletedTodo);
@@ -57,4 +57,8 @@ export default {
 };
 </script>
 
-<style ></style>
+<style >
+  .row{
+    margin-top: 10px;
+  }
+</style>
