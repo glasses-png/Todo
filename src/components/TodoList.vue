@@ -36,9 +36,10 @@ export default {
   data() {
     return {
       todos: [
-        { description: "Buy Groceries",},
-        { description: "Take out the trash", },
-        { description: "Finish doing laundry", },
+        { description: "Buy some stuff",},
+        { description: "Walk the dog", },
+        { description: "read a book", },
+        { description: "play a game", },
       ],
     };
   },
